@@ -1,0 +1,321 @@
+
+*{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    box-sizing: none;
+}
+
+html{
+    font-size: 75%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#fff;
+}
+header{
+    width: 70%;
+    position: fixed;
+    top: 2rem; left:50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+} 
+    
+
+
+.header .nav{
+
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;  
+}
+
+
+.logo{
+    cursor: not-allowed;
+    z-index: 1;
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px;
+    font-size: 15px;
+    margin-top: 1px;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:#0505df;
+    transition: 1s;
+}
+
+li a:hover{
+    
+    background-color: #dd1515;
+}
+
+.content{
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.034);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px -5px #0f0303;
+    transition: 3s;
+}
+
+.content:hover{
+    background-color:skyblue
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #c70b0b;
+    flex-flow: row,wrap;
+    break-inside: avoid;
+    margin-left: 20%;
+}
+
+.content h5{
+    font-size: 30px;
+    color: hsl(231, 92%, 52%);
+    margin-left: 2%;  
+    break-inside: avoid;  
+    flex-flow: row,wrap;
+    margin-left: 30%;
+}
+
+.content .btn{
+    flex-flow: row,wrap;
+    display: inline-block;
+    background: linear-gradient(45deg, #e70909,#373af1);
+    border-radius: 6px;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    position: relative;  
+    transition: 1s;
+    margin-left: 40%;
+}
+
+.content .btn:hover{
+    background: #fff;
+    color: red;
+}
+.feature-img{
+    height:40.5% ;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    width: 30%;
+    border-radius: 70%;
+    flex-flow: row,wrap;
+}
+
+footer{
+    background-color:rgba(54, 52, 52, 0.829);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+.design a{
+    color:rgb(207, 10, 10);
+    text-align: left;
+    transition: 1s;
+}
+.design a:hover{
+    background-color: #fff;
+}
+
+main{
+    height: 200vh;
+}
+
+.org{
+    background-color: pink;
+    width: 90%;
+    padding-right: 0;
+    margin-top: 70px;
+    margin-left: 60px;
+    transition: 1s;
+}
+.org:hover{
+    background-color:#fff;
+    cursor: pointer;
+}
+.org img{
+    width: 50%;
+    height: auto;
+    min-width: 50px;
+    border-radius: 50%;
+    align-items: flex-start;
+}
+.org h2{
+    color: #c70b0b;
+    text-align: center;
+}
+.org p{
+    color: #020107;
+    text-align: center;
+    font-size: 15px;
+}
+main .p1{
+    color: rgba(255, 8, 0, 0.671);
+    font-size: 15px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+main .forms{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #373af1;
+}
+
+.forms .button{
+    background-color: darkred;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 1s;
+}
+.button:hover{
+    color: blue;
+    background-color: #fff;
+    cursor: pointer;
+}
+.forms .type{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* we are dealing with media query for a small screen */
+@media screen and (min-width:280px) {
+
+
+    .logo{
+        width: 70px;
+        height: 60px;
+
+    }
+
+    .content .btn{
+        padding: 10px;
+        font-size: 15px;
+        
+    }
+
+    .content h1{
+        font-size: 15px;
+    }
+    .content h5{
+        font-size: 10px;
+        
+    }
+    .feature-img{
+        display: none;
+    }
+    main {
+        margin-right: 70px;
+    }
+
+    .forms{
+        padding: 2px;
+    }
+    #select{
+        margin-top: 10px;
+        padding: 9px;
+    }
+    #phone{
+        padding: 7px;
+        margin-top: 2px;
+    }
+    #full_name{
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    #email{
+        padding: 10px;
+    }
+}
+
+/* medium screen media querry */
+
+@media screen and (min-width:913px) {
+    .nav{
+        display: inline-block;
+        font-size: 20px;
+        width: 95%;
+        
+    }
+    .logo{
+        width:70px ;
+        height: 60px;
+    }
+
+    .content .btn{
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .content h1{
+        font-size: 23px;
+    }
+    .content h5{
+        font-size: 20px;
+        margin-left: 40%;
+    }
+
+}
+
+/* large sreen media querry */
+@media screen and (min-width:1000){
+    .nav{
+        font-size: 80px;
+
+
+    }
+    .logo{
+        width: 450px;
+        height: 400px;
+    }
+    
+}
+
+/* extra large sreen media querry */
+@media screen and (min-width:1853){
+    header .nav{
+        width:100% ;
+
+
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
